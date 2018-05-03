@@ -1,7 +1,4 @@
 #!/bin/bash
-
-#sudo -i
-
 # Instal Pre-reqs
 sudo apt-get update
 
