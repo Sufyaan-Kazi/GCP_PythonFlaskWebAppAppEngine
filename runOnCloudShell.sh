@@ -3,7 +3,7 @@
 #sudo -i
 
 # Instal Pre-reqs
-apt-get update
+sudo apt-get update
 
 PROJECT_ID=`gcloud config list project --format "value(core.project)"`
 SCRIPT_NAME=suf-python-face
