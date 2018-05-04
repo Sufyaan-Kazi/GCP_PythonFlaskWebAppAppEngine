@@ -7,6 +7,8 @@ KEY_FILE=$PROJECT_ID-$SCRIPT_NAME.json
 
 createServiceAccount() {
   # Alternately set the API Key env to value defined in the Console (Credntials, Create Credentials)
+  rm $KEY_FILE
+  gcloud iam service-accounts delete $SERVICE_ACC
   gcloud iam service-accounts create $SCRIPT_NAME --display-name=$SCRIPT_NAME
   gcloud projects add-iam-policy-binding $PROJECT_ID --member "serviceAccount:$SERVICE_ACC.iam.gserviceaccount.com" --role "roles/owner"
   gcloud iam service-accounts keys create $KEY_FILE --iam-account $SERVICE_ACC.iam.gserviceaccount.com
