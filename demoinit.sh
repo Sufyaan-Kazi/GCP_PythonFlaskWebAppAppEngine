@@ -8,7 +8,6 @@
 
 #Load in vars and common functions
 . ./common.sh
-gcloud auth login
 
 # Start
 . ./cleanup.sh
