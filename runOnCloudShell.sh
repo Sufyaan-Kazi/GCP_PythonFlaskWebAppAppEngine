@@ -1,4 +1,5 @@
 #!/bin/bash
+. ./demoinit.sh
 
 PROJECT_ID=`gcloud config list project --format "value(core.project)"`
 SCRIPT_NAME=suf-python-face

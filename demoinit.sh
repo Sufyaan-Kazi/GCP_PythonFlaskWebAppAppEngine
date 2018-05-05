@@ -7,8 +7,8 @@
 # The application uses Google Cloud APIs for Vision, Storage, and Datastore.
 
 #Load in vars and common functions
-. ./vars.properties
 . ./common.sh
+gcloud auth login
 
 # Start
 . ./cleanup.sh
